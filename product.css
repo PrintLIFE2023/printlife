@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+*{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-image:url(files-img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.logo{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    display: inline-block;
+    margin-left:20px;
+}
+a{
+    text-decoration: none;
+    color:#000000;
+    transition: .3s;
+}
+.tittle{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    padding:60px;
+}
+.logo{
+    padding:10px 4%;
+}
+.list-link a:hover{
+    color:#00000056;
+}
+i{
+    color:#000000;
+    transition: 0.3s;
+}
+.logo i:hover{
+    color:#00000056;
+}
+.nameSite{
+    margin-left: 270px;
+    margin-top: 200px;
+    font-size: 40px;
+}
+section.ondas{
+    position: relative;
+    width: 100%;
+    height: 18vh;
+}
+.onda{
+    width:100%;
+    height: 100px;
+    position: absolute;
+    bottom:0;
+    background-image: url(onda.png);
+    background-size: 1000px;
+
+    animation: ondaAnimada 2s ease-in-out infinite alternate;
+}
+@keyframes ondaAnimada{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+#onda1{
+    z-index: 1000;
+    opacity:1;
+    background-position-x: 400px;
+}
+#onda2{
+    z-index: 999;
+    opacity:0.5;
+    background-position-x: 300px;
+}
+#onda3{
+    z-index: 998;
+    opacity:0.2;
+    background-position-x: 200px;
+}
+#onda4{
+    z-index: 997;
+    opacity:0.7;
+    background-position-x: 100px;
+}
+.principal{
+    background-color: #fff;
+}
+.pages{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:60px 4%;
+}
+.page-one{
+    display: flex;
+    flex-direction: row;
+    gap: 0px 4%;
+}
+.page-one .main2{
+    text-align: end;
+}
+
+
+.title2{
+    display: flex;
+    flex-direction: row;
+}
+.title2 span{
+    font-size: 30px;
+    font-weight: 800;
+    color:#5B87C3;
+}
+.page-two{
+    padding:70px 4%;
+    margin-top:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.page-two h3{
+    font-size: 30px;
+
+}
+.text-form h3{
+    font-size: 55px;
+}
+.text-form span{
+    font-size: 45px;
+    font-weight: 600;
+    color: #5B87C3;
+}
+.last-page{
+    margin-top:150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 100vh;
+    height: auto;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 4%;
+    
+}
+.form label{
+    color:#000000;
+}
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#ffffff;
+    gap:15px;
+    
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+}
+.forms input, .forms textarea{
+    text-decoration: none;
+    border:none;
+    width: 100%;
+    height: 10vh;
+    background-color: #eaeaea;
+    padding:20px 4%;
+    border-radius: 8px;
+}
+.forms textarea{
+    height: 20vh;
+    width: auto;
+}
+
+.btn-forms{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    
+        margin-top: 20px;
+}
+.btn-forms button{
+    text-decoration: none;
+    cursor: pointer;
+    border:none;
+    padding:20px;
+    border-radius:8px;
+    background-color: #5b86c3;
+    color: #ffffff;
+}
+.alert span{
+    color:red;
+    text-decoration: solid;
+text-transform: uppercase;
+}
+.fonts{
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fonts-two{
+    margin-top: 20px;
+}
+footer{
+    background-color: #5B87C3;
+    color:#fff;
+}
+.site{
+    display: flex;
+    align-items: center;
+}
+.footer1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin:0px 10px;
+    font-weight: 400;
+}
+#container-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 4%;
+    gap:10px;
+}
+.footer2{
+    font-weight: 400;
+    border-top: #ffffff 1px solid;
+}
+.footer2 .content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+.email i,.site i{
+    color:#fff;
+}
+.footer2 .content .name-mail a{
+    color: #fff;
+}
+.footer2 .content .name-mail p{
+    margin-left: 10px;
+}
